@@ -1,0 +1,104 @@
+body{
+   background-image: url(hero-bg.jpg); 
+   height: 100vh ; 
+   background-size: cover;
+   background-position: center;
+}
+*{
+    margin: 0; padding: 0; box-sizing: border-box; font-family: sans-serif ;
+}   
+section{ 
+    height: 100vh ;
+    display: grid;
+    place-items: center ; 
+}  
+body::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    background-color: #ffffff;  
+    clip-path: circle(40% at right 80%) ; 
+    z-index: -1 ;
+}
+.container{
+    background-color: #ffffff4f; 
+    width: 90%;
+    height: 90vh; 
+    border-radius: 20px ; 
+    z-index: 1 ; 
+} 
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center ; 
+    padding: 30px; 
+    width: 87%;
+    margin: auto ;
+} 
+ul li {
+    display: inline ; 
+    padding: 10px 20px;
+}  
+ul{
+   
+}
+li a {
+    text-decoration: none;
+    color: #222; 
+    font-weight: bold; 
+    padding: 10px 0 ;  
+    transition: .2s color ;
+    
+} 
+nav img {
+    width: 40px ; 
+    
+}   
+a:hover{
+    border-bottom: solid rgb(17, 185, 197) 1px ; 
+    color: rgb(49, 174, 196);
+} 
+.content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center ;  
+    width: 90%; 
+    margin: auto ;
+    height: 70vh; 
+   
+}
+img{
+    width: 600px ;
+} 
+.text{
+    width: 40% ;  
+    margin-left: 30px ; 
+     translate: 30px 0 ;
+} 
+.text h1 {
+    text-transform: uppercase ; 
+    color: white; 
+    font-size: 40px ;
+} 
+.text p {
+    line-height: 2 ; 
+    color: white;
+    letter-spacing: 1px; 
+} 
+.text button{
+    background-color: #ffffff00; 
+    padding: 10px 20px ; 
+    border: solid white 1px ; 
+    border-radius: 10px ; 
+    color: white ; 
+    width: 79% ;  
+   
+    transition: .4s ;
+} 
+.text button:hover{
+    cursor: pointer;
+    background-color: #fff;
+    color: #222;
+}
